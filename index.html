@@ -3,52 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SheInventor</title>
+    <title>SheInventor - Creatividad e Innovación</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="SheInventor Logo">
-            <span>SheInventor</span>
-        </div>
-        
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
-        <div class="nav-right" id="nav-links">
-            <a href="/comics">Cómics</a>
-            <a href="/tutoriales">Tutoriales</a>
+    <!-- Barra de Navegación -->
+    <div id="navbar-container"></div>
 
-            <div class="dropdown">
-                <button class="dropbtn">Español</button>
-                <div class="dropdown-content">
-                    <a href="#">Tecnología</a>
-                    <a href="#">Ciencia</a>
-                    <a href="#">Innovaciones</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">English</button>
-                <div class="dropdown-content">
-                    <a href="#">Technology</a>
-                    <a href="#">Science</a>
-                    <a href="#">Innovations</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Français</button>
-                <div class="dropdown-content">
-                    <a href="#">Technologie</a>
-                    <a href="#">Science</a>
-                    <a href="#">Innovations</a>
-                </div>
-            </div>
-            <div class="search-container">
-                <input type="text" id="search" placeholder="Buscar...">
-                <button onclick="searchFunction()">🔍</button>
+    <!-- Sección Hero (Presentación) -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a SheInventor</h1>
+            <p>Creatividad, innovación y tecnología en un solo lugar. Explora mi trabajo y sumérgete en un mundo de ideas.</p>
+            <div class="buttons">
+                <a href="/portafolio" class="btn">Ver Portafolio</a>
+                <a href="/comics" class="btn">Explorar Cómics</a>
+                <a href="/tutoriales" class="btn">Seguir Tutoriales</a>
+                <a href="https://forms.gle/tulinkdegoogleform" class="btn contact-btn" target="_blank">Contáctame</a>
             </div>
         </div>
-    </nav>
+    </header>
+
+    <!-- Sección Sobre SheInventor -->
+    <section class="about">
+        <div class="about-content">
+            <h2>¿Qué es SheInventor?</h2>
+            <p>SheInventor es un espacio dedicado a la creatividad, la tecnología y la enseñanza. Aquí encontrarás cómics originales, tutoriales educativos y mi portafolio de proyectos innovadores.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Llamados a la Acción -->
+    <section class="cta-section">
+        <div class="cta-box">
+            <h3>Explora el Portafolio</h3>
+            <p>Descubre mis proyectos más recientes y trabajos creativos.</p>
+            <a href="/portafolio" class="btn">Ver Más</a>
+        </div>
+        <div class="cta-box">
+            <h3>Lee mis Cómics</h3>
+            <p>Historias originales que te encantarán.</p>
+            <a href="/comics" class="btn">Ir a Cómics</a>
+        </div>
+        <div class="cta-box">
+            <h3>Sigue mis Tutoriales</h3>
+            <p>Aprende nuevas habilidades con guías paso a paso.</p>
+            <a href="/tutoriales" class="btn">Ver Tutoriales</a>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2025 SheInventor - Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
