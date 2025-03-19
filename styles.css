@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /* 🔹 Estilos Generales */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family:'Titillium Web', sans-serif;
 }
 
 /* 🔹 Barra de navegación */
@@ -11,12 +24,15 @@ body {
     align-items: center;
     padding: 10px 20px;
     background-color: #3b163b;
-    color: white;
+    color: rgb(182, 155, 253);
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    
 }
 
 /* 🔹 Logo */
@@ -34,11 +50,18 @@ body {
     margin-right: 10px;
 }
 
+.logo span {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700; /* Puedes ajustar el peso a 400, 600 o 700 */
+    font-size: 1.2rem; /* Ajusta el tamaño según necesites */
+    color: #b280f5; /* O el color que prefieras */
+}
+
 /* 🔹 Contenido a la derecha */
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 /* 🔹 Menús desplegables */
@@ -79,6 +102,15 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+/* Estilos para el separador con el emoji de mariposa */
+.butterfly-separator {
+    font-size: 24px; /* Tamaño del emoji */
+    margin: 0 15px;  /* Espaciado alrededor del emoji */
+    padding: 0 10px; /* Espacio interno para evitar que los elementos se peguen al emoji */
+    align-self: center; /* Centra verticalmente el emoji */
 }
 
 /* 🔹 Barra de búsqueda */
@@ -127,6 +159,7 @@ body {
         width: 100%;
         text-align: center;
         padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .nav-right a, .dropdown {
@@ -135,10 +168,117 @@ body {
     }
 
     .menu-toggle {
-        display: block;
+        display: block;  /* Se muestra el botón hamburguesa */
     }
 
     .nav-right.active {
         display: flex;
     }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #f1c40f;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #e1b50f;
+}
+
+/* Galerías */
+section {
+    padding: 50px 0;
+    background-color: white;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery div {
+    width: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.gallery div:hover {
+    transform: scale(1.1);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Formulario de Contacto */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2980b9;
 }

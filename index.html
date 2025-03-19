@@ -6,57 +6,66 @@
     <title>SheInventor - Creatividad e Innovación</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    <style>
+        /* Contenedor principal para centrar el formulario */
+        #contact-form-container {
+            display: flex;
+            justify-content: center;   /* Centra horizontalmente */
+            align-items: center;       /* Centra verticalmente */
+            height: 100vh;             /* Ocupa toda la altura de la ventana */
+            margin: 0;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 0px; /* Reduce el espacio debajo del título */
+        }
+
+        iframe {
+            width: 100%;               /* Ocupa todo el ancho del contenedor */
+            max-width: 1000px;          /* Tamaño máximo del iframe */
+            height:1000px;             /* Altura fija para el iframe */
+            border: none;              /* Elimina el borde del iframe */
+        }
+    </style>
+
+
+
 </head>
-<body>
+    <body>
 
     <!-- Barra de Navegación -->
     <div id="navbar-container"></div>
 
-    <!-- Sección Hero (Presentación) -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Bienvenido a SheInventor</h1>
-            <p>Creatividad, innovación y tecnología en un solo lugar. Explora mi trabajo y sumérgete en un mundo de ideas.</p>
-            <div class="buttons">
-                <a href="/portafolio" class="btn">Ver Portafolio</a>
-                <a href="/comics" class="btn">Explorar Cómics</a>
-                <a href="/tutoriales" class="btn">Seguir Tutoriales</a>
-                <a href="https://forms.gle/tulinkdegoogleform" class="btn contact-btn" target="_blank">Contáctame</a>
+        <!-- Encabezado -->
+        <header>
+            <div class="container">
+                <h1>Bienvenue sur mon site web</h1>
+                <p>Explorez mes projets et mes comics récents</p>
+                <a href="#contact" class="cta-button">Contactez-moi</a>
             </div>
-        </div>
-    </header>
+        </header>
+    
+        <!-- Galería de Proyectos -->
+        <section id="projets">
+            <h2>Mes Projets</h2>
+            <div class="gallery" id="gallery-projets"></div>
+        </section>
+    
+        <!-- Galería de Comics Recientes -->
+        <section id="comics">
+            <h2>Comics Récents</h2>
+            <div class="gallery" id="gallery-comics"></div>
+        </section>
+    
+        <section id="contact">
+            <h2 style="text-align: center;">Contactez-moi</h2>
+            <!-- Contenedor que centra el formulario -->
+            <div id="contact-form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeqQh6SSHlsVXgX9SprPsZPdVX-2ju5_4s8wfpDh7Nb1fMOMg/viewform?embedded=true" width="1000" height="1000" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 
-    <!-- Sección Sobre SheInventor -->
-    <section class="about">
-        <div class="about-content">
-            <h2>¿Qué es SheInventor?</h2>
-            <p>SheInventor es un espacio dedicado a la creatividad, la tecnología y la enseñanza. Aquí encontrarás cómics originales, tutoriales educativos y mi portafolio de proyectos innovadores.</p>
-        </div>
-    </section>
-
-    <!-- Sección de Llamados a la Acción -->
-    <section class="cta-section">
-        <div class="cta-box">
-            <h3>Explora el Portafolio</h3>
-            <p>Descubre mis proyectos más recientes y trabajos creativos.</p>
-            <a href="/portafolio" class="btn">Ver Más</a>
-        </div>
-        <div class="cta-box">
-            <h3>Lee mis Cómics</h3>
-            <p>Historias originales que te encantarán.</p>
-            <a href="/comics" class="btn">Ir a Cómics</a>
-        </div>
-        <div class="cta-box">
-            <h3>Sigue mis Tutoriales</h3>
-            <p>Aprende nuevas habilidades con guías paso a paso.</p>
-            <a href="/tutoriales" class="btn">Ver Tutoriales</a>
-        </div>
-    </section>
-
-    <!-- Pie de Página -->
-    <footer>
-        <p>&copy; 2025 SheInventor - Todos los derechos reservados.</p>
-    </footer>
-
-</body>
+        </section>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
 </html>
